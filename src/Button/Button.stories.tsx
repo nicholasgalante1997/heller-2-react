@@ -102,7 +102,11 @@ export const SecondaryDark: ButtonStoryType = {
       </div>
     )
   ],
-  render: (args) => <Button v="secondary" {...args}>Click Me</Button>
+  render: (args) => (
+    <Button v="secondary" {...args}>
+      Click Me
+    </Button>
+  )
 };
 
 export const TertiaryDark: ButtonStoryType = {
@@ -113,7 +117,11 @@ export const TertiaryDark: ButtonStoryType = {
       </div>
     )
   ],
-  render: (args) => <Button v="tertiary" {...args}>Click Me</Button>
+  render: (args) => (
+    <Button v="tertiary" {...args}>
+      Click Me
+    </Button>
+  )
 };
 
 export const NoirDark: ButtonStoryType = {
@@ -124,7 +132,11 @@ export const NoirDark: ButtonStoryType = {
       </div>
     )
   ],
-  render: (args) => <Button v="noir" {...args}>Click Me</Button>
+  render: (args) => (
+    <Button v="noir" {...args}>
+      Click Me
+    </Button>
+  )
 };
 
 export const Hover_RaiseElevation: ButtonStoryType = {
@@ -135,7 +147,11 @@ export const Hover_RaiseElevation: ButtonStoryType = {
       </div>
     )
   ],
-  render: (args) => <Button v="primary" size="medium" hover={{ animationType: 'raise-elevation' }} {...args}>Click Me</Button>
+  render: (args) => (
+    <Button v="primary" size="medium" hover={{ animationType: 'raise-elevation' }} {...args}>
+      Click Me
+    </Button>
+  )
 };
 
 export const Hover_TransitionBG: ButtonStoryType = {
@@ -146,5 +162,9 @@ export const Hover_TransitionBG: ButtonStoryType = {
       </div>
     )
   ],
-  render: (args) => <Button v="primary" size="medium" hover={{ animationType: 'background-transition' }} {...args}>Click Me</Button>
+  render: (args) => (
+    <Button v="primary" size="medium" hover={{ animationType: 'background-transition' }} {...args}>
+      Click Me
+    </Button>
+  )
 };

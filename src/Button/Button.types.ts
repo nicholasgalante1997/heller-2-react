@@ -6,7 +6,9 @@ interface InternalButtonProps {
   size?: 'small' | 'medium' | 'large';
   hover?: {
     animationType: 'raise-elevation' | 'background-transition';
-  }
+  };
 }
 
-export type ButtonProps = Omit<React.HTMLProps<HTMLButtonElement>, 'size' | 'type'> & HasChildNodes & InternalButtonProps;
+export type ButtonProps = Omit<React.HTMLProps<HTMLButtonElement>, 'size' | 'type'> &
+  HasChildNodes &
+  InternalButtonProps;

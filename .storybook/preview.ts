@@ -4,6 +4,7 @@
 import '../../heller-2-lite/build/css/variables.css';
 import '../../heller-2-lite/build/css/base.min.css';
 import '../../heller-2-lite/build/css/button.min.css';
+import '../../heller-2-lite/build/css/typography.min.css';
 
 import type { Preview } from "@storybook/react";
 

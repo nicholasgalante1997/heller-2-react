@@ -32,9 +32,9 @@ function ButtonComponent({
       if (hover.animationType === 'raise-elevation') {
         return 'hover-raise-elevation-100';
       } else {
-        return `h-button-hover-${v}`
+        return `h-button-hover-${v}`;
       }
-    } else { 
+    } else {
       return '';
     }
   }, [hover]);
@@ -47,18 +47,13 @@ function ButtonComponent({
         buttonHoverClassName,
         classNameProp
       ),
-    [
-      buttonVClassName, 
-      buttonSizeClassName, 
-      classNameProp, 
-      buttonHoverClassName
-    ]
+    [buttonVClassName, buttonSizeClassName, classNameProp, buttonHoverClassName]
   );
   return (
     <button className={className} {...rest}>
       {children}
     </button>
   );
-};
+}
 
 export const Button = React.memo(ButtonComponent);
