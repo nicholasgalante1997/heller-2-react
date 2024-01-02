@@ -1,25 +1,16 @@
-import React, { type HTMLProps } from 'react';
+import React from 'react';
 import classNames from 'classnames';
-import { type HasChildNodes } from '@/types/HasChildren';
 
-interface InternalButtonProps {
-  v?: 'primary' | 'secondary' | 'tertiary' | 'noir';
-  size?: 'small' | 'medium' | 'large';
-  hover?: {
-    animationType: 'raise-elevation' | 'background-transition';
-  }
-}
+import { ButtonProps } from './Button.types';
 
-export type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, 'size' | 'type'> & HasChildNodes & InternalButtonProps;
-
-const buttonVariantClassNameMap = new Map<InternalButtonProps['v'], string>([
+const buttonVariantClassNameMap = new Map<ButtonProps['v'], string>([
   ['primary', 'h-button-primary'],
   ['secondary', 'h-button-secondary'],
   ['tertiary', 'h-button-tertiary'],
   ['noir', 'h-button-noir']
 ]);
 
-const buttonSizeClassMap = new Map<InternalButtonProps['size'], string>([
+const buttonSizeClassMap = new Map<ButtonProps['size'], string>([
   ['small', 'h-button-size-small'],
   ['medium', 'h-button-size-medium'],
   ['large', 'h-button-size-large']
