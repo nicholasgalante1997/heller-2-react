@@ -6,18 +6,25 @@ import '../../heller-2-lite/build/css/base.min.css';
 import '../../heller-2-lite/build/css/button.min.css';
 import '../../heller-2-lite/build/css/typography.min.css';
 
-import type { Preview } from "@storybook/react";
+import './sb.css';
+import './DocTemplate.css';
+
+import type { Preview } from '@storybook/react';
+import theme from './theme';
 
 const preview: Preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/i,
-      },
+        date: /Date$/i
+      }
     },
-  },
+    docs: {
+      theme
+    }
+  }
 };
 
 export default preview;

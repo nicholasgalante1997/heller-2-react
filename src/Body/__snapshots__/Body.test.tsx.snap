@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Heading Snapshot 1`] = `
+exports[`Body Snapshot 1`] = `
 <div>
-  <h1
-    class="h-heading-100"
+  <p
+    class="h-body"
   >
     Shmallas
-  </h1>
+  </p>
 </div>
 `;

@@ -4,7 +4,7 @@ import { colorBaseBlackAlpha, colorBaseWhiteAlpha } from 'heller-2-lite';
 import { Button } from './Button';
 
 const meta: Meta<typeof Button> = {
-  title: 'components/heller-2/button',
+  title: 'react/components/Button',
   component: Button
 };
 
