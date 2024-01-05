@@ -36,7 +36,7 @@
     "classnames": "^2.5.1"
   },
   "peerDependencies": {
-    "heller-2-lite": "^0.0.13",
+    "heller-2-lite": "^0.0.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -48,7 +48,6 @@
     "@storybook/addon-essentials": "^7.6.6",
     "@storybook/addon-interactions": "^7.6.6",
     "@storybook/addon-links": "^7.6.6",
-    "@storybook/addon-onboarding": "^1.0.10",
     "@storybook/blocks": "^7.6.6",
     "@storybook/manager-api": "^7.6.7",
     "@storybook/react": "^7.6.6",
