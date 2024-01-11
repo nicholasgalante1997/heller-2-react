@@ -92,8 +92,8 @@ devDependencies:
     specifier: ^7.33.2
     version: 7.33.2(eslint@8.56.0)
   heller-2-lite:
-    specifier: ^0.0.13
-    version: 0.0.13
+    specifier: ^0.0.16
+    version: 0.0.16
   jest:
     specifier: ^29.7.0
     version: 29.7.0(@types/node@20.10.5)
@@ -7910,8 +7910,8 @@ packages:
     hasBin: true
     dev: true
 
-  /heller-2-lite@0.0.13:
-    resolution: {integrity: sha512-aDULQbVSHA+SG/kbDqUhCbZvdxJ1sOec75XEOfKcwK68nEXt5wuCbz5som+dJS23aTHdSyuSvqS84EaLkwSPNw==}
+  /heller-2-lite@0.0.16:
+    resolution: {integrity: sha512-AthV9aBxcrhSlNmQy2+7mwDaxtFm9Qfxn45VPfKek6qdybUYxn9aERimxIUk1Htm/zHVnx5dnUecU5MhDhmCiA==}
     dev: true
 
   /hosted-git-info@2.8.9:
