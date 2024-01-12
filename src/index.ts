@@ -1,4 +1,4 @@
-export { Button, type ButtonProps } from './Button';
+export { Button, type ButtonProps } from './components/Button';
 
-export { Body, type BodyProps } from './Body';
-export { Heading, type HeadingProps } from './Heading';
+export { Body, type BodyProps } from './components/Body';
+export { Heading, type HeadingProps } from './components/Heading';

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { ButtonProps } from './Button.types';
+import { type ButtonProps } from './Button.types';
 
 const buttonVariantClassNameMap = new Map<ButtonProps['v'], string>([
   ['primary', 'h-button-primary'],

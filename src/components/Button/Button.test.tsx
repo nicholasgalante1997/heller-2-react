@@ -8,7 +8,7 @@ describe('Button', () => {
     test('onClick', async () => {
       const testId = 'h-button-id';
       const onClick = jest.fn();
-      let jsx = (
+      const jsx = (
         <Button data-testid={testId} onClick={onClick}>
           Shmallas
         </Button>
@@ -21,7 +21,7 @@ describe('Button', () => {
     });
   });
   test('Snapshot', () => {
-    let jsx = <Button>Shmallas</Button>;
+    const jsx = <Button>Shmallas</Button>;
     const { container } = render(jsx);
     expect(container).toMatchSnapshot();
   });

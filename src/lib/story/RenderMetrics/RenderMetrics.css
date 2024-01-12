@@ -1,28 +1,28 @@
 .heller-2__render-metrics-container {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 10px;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .heller-2__render-metrics-component-container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .heller-2__render-metrics-metrics-container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100%;
-    gap: 12px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 12px;
 }

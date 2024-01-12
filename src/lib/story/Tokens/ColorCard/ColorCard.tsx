@@ -3,14 +3,10 @@ import {} from 'heller-2-lite';
 
 const classNames = {} as const;
 
-type ColorCardComponentProps = {
-    color: string;
-};
+interface ColorCardComponentProps {
+  color: string;
+}
 
 function ColorCardComponent(props: ColorCardComponentProps) {
-    return (
-        <div>
-
-        </div>
-    );
+  return <div></div>;
 }

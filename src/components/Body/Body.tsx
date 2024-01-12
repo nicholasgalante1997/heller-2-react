@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { BodyProps } from './Body.types';
+import { type BodyProps } from './Body.types';
 import classNames from 'classnames';
 
 const bodyTextMap = new Map<BodyProps['as'], (props: any) => React.JSX.Element>([

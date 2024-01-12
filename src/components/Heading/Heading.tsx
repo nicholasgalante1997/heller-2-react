@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeadingProps } from './Heading.types';
+import { type HeadingProps } from './Heading.types';
 import classNames from 'classnames';
 
 const headingJsxMap = new Map<HeadingProps['as'], React.FC<Omit<HeadingProps, 'as'>>>([
