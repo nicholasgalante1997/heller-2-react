@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { type ButtonProps } from './Button.types';
+import { type ButtonProps, type ButtonAnimationOnHover } from './Button.types';
 
 const buttonVariantClassNameMap = new Map<ButtonProps['v'], string>([
   ['primary', 'h-button-primary'],
@@ -16,6 +16,20 @@ const buttonSizeClassMap = new Map<ButtonProps['size'], string>([
   ['large', 'h-button-size-large']
 ]);
 
+const buttonAnimationOnHoverClassMap = new Map<ButtonAnimationOnHover, string>([
+  ['background-transition', 'h-button-hover'],
+  ['raise-elevation', 'hover-raise-elevation-100'],
+  ['scale-content', 'hover-scale-200']
+]);
+
+function getHoverAnimation(type: ButtonAnimationOnHover, variant: ButtonProps['v'] = 'primary') {
+  if (type === 'background-transition') {
+    return buttonAnimationOnHoverClassMap.get(type) + `-${variant}`;
+  } else {
+    return buttonAnimationOnHoverClassMap.get(type);
+  }
+}
+
 function ButtonComponent({
   children,
   hover,
@@ -27,17 +41,7 @@ function ButtonComponent({
   const buttonDefaultClassName = 'h-button';
   const buttonVClassName = React.useMemo(() => buttonVariantClassNameMap.get(v), [v]);
   const buttonSizeClassName = React.useMemo(() => buttonSizeClassMap.get(size), [size]);
-  const buttonHoverClassName = React.useMemo(() => {
-    if (hover) {
-      if (hover.animationType === 'raise-elevation') {
-        return 'hover-raise-elevation-100';
-      } else {
-        return `h-button-hover-${v}`;
-      }
-    } else {
-      return '';
-    }
-  }, [hover]);
+  const buttonHoverClassName = React.useMemo(() => hover && getHoverAnimation(hover.animationType), [hover]);
   const className = React.useMemo(
     () =>
       classNames(

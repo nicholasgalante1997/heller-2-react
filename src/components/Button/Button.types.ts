@@ -1,11 +1,12 @@
 import type React from 'react';
 import { type HasChildNodes } from '@/types/HasChildren';
 
+export type ButtonAnimationOnHover = 'raise-elevation' | 'background-transition' | 'scale-content';
 interface InternalButtonProps {
   v?: 'primary' | 'secondary' | 'tertiary' | 'noir';
   size?: 'small' | 'medium' | 'large';
   hover?: {
-    animationType: 'raise-elevation' | 'background-transition';
+    animationType: ButtonAnimationOnHover;
   };
 }
 

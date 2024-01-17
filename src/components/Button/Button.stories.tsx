@@ -168,3 +168,18 @@ export const Hover_TransitionBG: ButtonStoryType = {
     </Button>
   )
 };
+
+export const Hover_Scale: ButtonStoryType = {
+  decorators: [
+    (Story) => (
+      <div className="heller2-theme" data-theme-mode="light" style={containerStyle('light')}>
+        <Story />
+      </div>
+    )
+  ],
+  render: (args) => (
+    <Button v="primary" size="medium" hover={{ animationType: 'scale-content' }} {...args}>
+      Click Me
+    </Button>
+  )
+};

@@ -80,15 +80,15 @@ function AlertsCtxButton() {
       severity: 'error',
       ttd: 300000,
       dismissable: true
-    })
+    });
   }
   return (
-    <Button style={{ position: "absolute", bottom: 24 }} onClick={onClick}>
+    <Button style={{ position: 'absolute', bottom: 24 }} onClick={onClick}>
       Dispatch New Alert
     </Button>
-  )
+  );
 }
 
 export const AlertsCtxMain: StoryObj = {
   render: () => <AlertsCtxExample />
-}
+};
