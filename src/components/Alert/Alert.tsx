@@ -44,4 +44,5 @@ function AlertComponent(props: AlertProps) {
   );
 }
 
-export const Alert = memo(AlertComponent);
+export const Alert = memo(AlertComponent as React.FC<AlertProps>);
+Alert.displayName = 'HlrAlert';

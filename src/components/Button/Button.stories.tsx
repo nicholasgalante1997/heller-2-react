@@ -38,6 +38,18 @@ export const PrimaryLight: ButtonStoryType = {
   render: (args) => <Button {...args}>Click Me</Button>
 };
 
+export const PrimaryLightRounded: ButtonStoryType = {
+  decorators: [
+    (Story) => (
+      <div className="heller2-theme" data-theme-mode="light" style={containerStyle('light')}>
+        <Story />
+      </div>
+    )
+  ],
+  args: { rounded: true },
+  render: (args) => <Button {...args}>Click Me</Button>
+};
+
 export const SecondaryLight: ButtonStoryType = {
   decorators: [
     (Story) => (

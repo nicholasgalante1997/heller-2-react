@@ -40,4 +40,5 @@ function BodyComponent({
   );
 }
 
-export const Body = React.memo(BodyComponent);
+export const Body = React.memo(BodyComponent as React.FC<BodyProps>);
+Body.displayName = 'HlrBody';

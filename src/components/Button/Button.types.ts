@@ -5,6 +5,7 @@ export type ButtonAnimationOnHover = 'raise-elevation' | 'background-transition'
 interface InternalButtonProps {
   v?: 'primary' | 'secondary' | 'tertiary' | 'noir';
   size?: 'small' | 'medium' | 'large';
+  rounded?: boolean;
   hover?: {
     animationType: ButtonAnimationOnHover;
   };

@@ -30,4 +30,5 @@ function HeadingComponent({ as, className: classNameProp = '', children, ...rest
   );
 }
 
-export const Heading = React.memo(HeadingComponent);
+export const Heading = React.memo(HeadingComponent as React.FC<HeadingProps>);
+Heading.displayName = 'HlrHeading';
