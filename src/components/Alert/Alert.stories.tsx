@@ -5,7 +5,7 @@ import { AlertsCtxProvider, useAlertsCtx } from './AlertsCtx';
 import { Button } from '../Button';
 
 const meta: Meta<typeof Alert> = {
-  title: 'REACT/Components/Alert',
+  title: 'Alert',
   component: Alert
 };
 

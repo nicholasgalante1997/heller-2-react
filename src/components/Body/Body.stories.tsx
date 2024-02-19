@@ -3,7 +3,7 @@ import { type Meta, type StoryObj } from '@storybook/react';
 import { Body } from './Body';
 
 const meta: Meta<typeof Body> = {
-  title: 'REACT/Components/Typography/Body',
+  title: 'Typography/Body',
   component: Body
 };
 

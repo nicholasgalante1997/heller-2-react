@@ -17,12 +17,14 @@ function convertTagToScale(tag: HeadingProps['as']) {
 
 function HeadingComponent({ as, className: classNameProp = '', children, ...rest }: HeadingProps) {
   const Component = React.useMemo(() => headingJsxMap.get(as), [as]);
+  const headingClassName = React.useMemo(() => `h-heading-${convertTagToScale(as)}00`, [as]);
+  const className = classNames(headingClassName, classNameProp);
+
   if (!Component) {
     console.error('HELLER-2-REACT:::TYPOGRAPHY:::UNSUPPLIED_AS_PROP');
     return false;
   }
-  const headingClassName = React.useMemo(() => `h-heading-${convertTagToScale(as)}00`, [as]);
-  const className = classNames(headingClassName, classNameProp);
+
   return (
     <Component className={className} {...rest}>
       {children}

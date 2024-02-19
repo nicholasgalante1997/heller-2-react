@@ -18,10 +18,6 @@ function BodyComponent({
   ...rest
 }: BodyProps) {
   const Component = useMemo(() => bodyTextMap.get(as), [as]);
-  if (!Component) {
-    console.error('HELLER-2-REACT:::TYPOGRAPHY:::UNSUPPLIED_AS_PROP');
-    return false;
-  }
   const className = useMemo(
     () =>
       classNames({
@@ -33,6 +29,10 @@ function BodyComponent({
       }),
     [italic, bold, classNameProp, accent]
   );
+  if (!Component) {
+    console.error('HELLER-2-REACT:::TYPOGRAPHY:::UNSUPPLIED_AS_PROP');
+    return false;
+  }
   return (
     <Component {...rest} className={className}>
       {children}
