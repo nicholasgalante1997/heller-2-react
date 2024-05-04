@@ -1,5 +1,4 @@
 import { Canvas, Meta } from '@storybook/blocks';
-import { RenderMetricsComponent } from '@/lib/story/RenderMetrics';
 import * as Stories from './Body.stories';
 import { Body } from './Body';
 
@@ -11,16 +10,3 @@ The `<Body />` component is a `Typography` component that's intended for use in 
 The `Body` typography can be implemented as an `HTMLParagraph` tag, `HTMLSpan` tag, or `HTMLLabel` tag.
 
 <Canvas of={Stories.BodyMain} />
-
-## Render Performance
-
-<RenderMetricsComponent id="REACT/Components/Typography/Body/Docs">
-  <Body as="p">
-    At Meta, we've solved this problem by building React from the main branch, and manually updating it to a
-    specific pinned commit every week. This is also the approach that React Native releases have been
-    following for the last several years. Every stable release of React Native is pinned to a specific commit
-    from the main branch of the React repository. This lets React Native include important bugfixes and
-    incrementally adopt new React features at the framework level without getting coupled to the global React
-    release schedule.
-  </Body>
-</RenderMetricsComponent>
