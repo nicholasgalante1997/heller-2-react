@@ -13,6 +13,7 @@
       "require": "./dist/bundle.js",
       "default": "./dist/bundle.js"
     },
+    "./dist/css/*.css": "./dist/css/*.css",
     "./dist/src/index.d.ts": "./dist/src/index.d.ts",
     "./package.json": "./package.json"
   },
@@ -20,12 +21,13 @@
     "test": "jest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "formatter": "prettier --write src .storybook",
+    "prettier": "prettier --write src .storybook",
     "linter": "eslint --fix --ext .tsx,.ts,.jsx,.js src/**/*",
     "lint": "npm-run-all -s -c linter formatter",
     "build:exports": "node esbuild.config.cjs",
     "build:types": "tsc",
-    "build": "npm-run-all -s clean build:*",
+    "build": "npm-run-all -s clean build:* copy:*",
+    "copy:css": "mkdir -p dist/css && cp -R node_modules/heller-2-lite/build/css/* dist/css/",
     "clean": "rm -rf dist",
     "release": "release-it"
   },
@@ -35,7 +37,7 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "lodash.isequal": "^4.5.0",
-    "heller-2-lite": "^0.0.20"
+    "heller-2-lite": "^0.0.21"
   },
   "peerDependencies": {
     "react": "^18.2.0",

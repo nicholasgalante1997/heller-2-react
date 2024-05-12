@@ -8,8 +8,8 @@ const meta: Meta<typeof Link> = {
   component: Link,
   decorators: [],
   args: {
-    children: "For more information, visit our messageboard.",
-    href: "#"
+    children: 'For more information, visit our messageboard.',
+    href: '#'
   }
 };
 
