@@ -35,4 +35,4 @@ function Flexbox({
   );
 }
 
-export default memo(Flexbox);
+export default memo(Flexbox as React.FC<FlexboxProps>);

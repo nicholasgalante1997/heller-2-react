@@ -13,7 +13,7 @@
       "require": "./dist/bundle.js",
       "default": "./dist/bundle.js"
     },
-    "./dist/css/*.css": "./dist/css/*.css",
+    "./css/*.css": "./dist/css/*.css",
     "./dist/src/index.d.ts": "./dist/src/index.d.ts",
     "./package.json": "./package.json"
   },
@@ -37,7 +37,7 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "lodash.isequal": "^4.5.0",
-    "heller-2-lite": "^0.0.21"
+    "heller-2-lite": "^0.0.22"
   },
   "peerDependencies": {
     "react": "^18.2.0",

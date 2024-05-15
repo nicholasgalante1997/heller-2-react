@@ -3,6 +3,7 @@ import '../../heller-2-lite/build/css/variables.css';
 import '../../heller-2-lite/build/css/alert.min.css';
 import '../../heller-2-lite/build/css/base.min.css';
 import '../../heller-2-lite/build/css/button.min.css';
+import '../../heller-2-lite/build/css/card.min.css';
 import '../../heller-2-lite/build/css/flexbox.min.css';
 import '../../heller-2-lite/build/css/glasspane.min.css';
 import '../../heller-2-lite/build/css/grid.min.css';
